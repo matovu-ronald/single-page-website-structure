@@ -1,0 +1,148 @@
+/* Colors */
+
+/* Dark Blue #242582 */
+
+/* Brown #99738E */
+
+/* Pink #F64C72 */
+
+/* Light Blue #2F2FA2 */
+
+/* Grayish Purple #553D67 */
+
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Merriweather');
+#minimenu {
+    display: none;
+}
+
+#header {
+    position: fixed;
+    background-color: #ddd;
+    width: 100%;
+    height: 80px;
+    top: 0px;
+    left: 0px;
+    /* z-index: 2; */
+}
+
+#nav {
+    font-family: 'Merriweather', serif;
+    float: right;
+    text-transform: uppercase;
+}
+
+#branding {
+    width: 200px;
+    height: 50px;
+    float: left;
+    background: url('http://lorempixel.com/output/business-q-c-301-64-3.jpg') no-repeat center center;
+    background-size: 200px;
+}
+
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav ul li {
+    float: left;
+    border: 0.5px solid #FFF;
+    display: inline-block;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    background-color: #2F2FA2;
+    display: block;
+    padding: 15px;
+    color: #FFF;
+    margin: 0 2px;
+}
+
+#nav ul li a:hover {
+    background-color: #553D67;
+}
+
+body {}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+.section:nth-child(even) {
+    background-color: #242582;
+}
+
+.section {
+    min-height: 1000px;
+    padding-top: 100px;
+    overflow: hidden;
+    /* position: relative; */
+    font-family: 'Gloria Hallelujah', cursive;
+    background-color: #2F2FA2;
+    color: #FFF;
+}
+
+.section article {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+    padding: 10px;
+}
+
+#about {
+    background: url('http://lorempixel.com/output/city-q-c-1460-1080-3.jpg') no-repeat;
+    background-size: cover;
+}
+
+#projects {
+    background: url('http://lorempixel.com/output/business-q-c-1460-1080-3.jpg') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 20px 0 80px 0;
+}
+
+@media screen and (max-width: 680px) {
+    #home {
+        background-color: aqua;
+    }
+
+    #minimenu {
+        display: block;
+        float: right;
+        margin-right: 20px;
+        margin-top: 7px;
+        cursor: pointer;
+    }
+
+    #minimenu .fa {
+        font-size: 35px;
+        
+    }
+
+    #nav {
+        display: none;
+        width: 100%;
+    }
+
+    #nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #home {
+        background-color: red;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #home {
+        background-color: green;
+    }
+}
